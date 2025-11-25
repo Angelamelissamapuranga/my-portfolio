@@ -48,7 +48,7 @@ p {
   background-color: var(--branding-color);
   text-align: center;
   padding: 160px 20;
-  color: black;
+  color: white;
 }
 
 .hero p {
@@ -67,10 +67,32 @@ p {
   padding: 15px 30px;
 }
 
-.about-description {
+.project-head {
+  color: var(--branding-color);
+}
+.projects {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.about-section h1 {
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.about-section h2 {
+  font-size: 18px;
+}
+.about-section {
   padding: 120px 60px;
 }
 
+.about-section-content {
+  margin: 30px;
+}
+
+.emojis {
+  font-size: 40px;
+}
 @media (max-width: 900px) {
   h1 {
     font-size: 40px;
@@ -84,6 +106,10 @@ p {
   .about-description {
     padding: 0;
     text-align: center;
+  }
+  .about-section {
+    text-align: center;
+    padding: 0;
   }
 }
 
