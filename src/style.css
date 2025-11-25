@@ -110,12 +110,12 @@ p {
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: var(--branding-color); /* temp color, will change later */
-  right: 40px; /* moves next arrow IN from right side */
+  color: var(--branding-color);
+  right: 40px;
   left: auto;
 }
 
 .swiper-button-prev {
-  left: 40px; /* moves prev arrow IN from left side */
+  left: 40px;
   right: 40px;
 }

@@ -73,7 +73,6 @@
     </div>
     <div class="swiper myProjectsSwiper">
       <div class="swiper-wrapper">
-        <!-- SLIDE 1 (two projects) -->
         <div class="swiper-slide">
           <div class="project-card">
             <img src="/images/weather.jpg" />
@@ -99,7 +98,6 @@
           </div>
         </div>
 
-        <!-- SLIDE 2 (next two projects) -->
         <div class="swiper-slide">
           <div class="project-card">
             <img src="/images/lumee.jpg" />
@@ -115,14 +113,13 @@
         </div>
       </div>
 
-      <!-- Arrows -->
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
 
     <script>
       var swiper = new Swiper(".myProjectsSwiper", {
-        slidesPerView: 1, // 1 slide = 2 projects
+        slidesPerView: 1,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
