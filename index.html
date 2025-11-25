@@ -24,6 +24,12 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="/src/style.css" />
     <title>Angela Mapuranga junior software developer- My portfolio</title>
   </head>
@@ -32,7 +38,96 @@
       <p>Hello I am</p>
       <h1>Angela Melissa Mapuranga</h1>
       <h2 class="mb-5">Junior Front-end Developer based in Hasselt, Belgium</h2>
-      <div><a href="" class="btn btn-branding">Get started</a></div>
     </div>
+    <div class="container">
+      <div class="row">
+        <div class="col d-none d-md-block">
+          <img
+            src="/images/angela.png"
+            alt="picture of myself"
+            class="img-fluid w-100"
+          />
+        </div>
+
+        <div class="col">
+          <div class="about-description">
+            <h2 class="mb-5">About Angela</h2>
+            <p class="mb-5">
+              Hi, I am Angela, a junior software developer based in Belgium with
+              born and raised in Zimbabwe.I enjoy building clean, functional and
+              user-focused digital experiences. I have developed my skills
+              through hands on learning, bootcamps and real projects. Working
+              with HTML, CSS, JavaScript, Python, responsive design, APIs, React
+              and AI tools. I am passionate about learning, solving problems,
+              and improving with every project I take on. Since I did not follow
+              a traditional university path, I have learned to rely on
+              consistency, curiosity, and discipline, and that is what drives me
+              in tech. My goal is to grow as a developer, contribute to
+              meaningful projects and continue building the kind of work that
+              reflects my dedication and potential.
+            </p>
+            <div><a href="" class="btn btn-branding">Get started</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper myProjectsSwiper">
+      <div class="swiper-wrapper">
+        <!-- SLIDE 1 (two projects) -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="/images/weather.jpg" />
+            <h3>weather app</h3>
+            <p>
+              I built a responsive weather application using HTML, CSS, and
+              JavaScript.The app integrates a public Weather API to display live
+              temperature, weather conditions, and location information.This
+              project strengthened my skills in working with APIs, hosted the
+              application on Github and Netlify
+            </p>
+          </div>
+
+          <div class="project-card">
+            <img src="/images/devillo.jpg" />
+            <h3>De-Villo (coming soon)</h3>
+            <p>
+              responsive mock website (for my Landord) I really wanted to push
+              myself and challange myself and build a website that wasnt
+              required for my bootcamp and to sharpen my skills in this website
+              I used responsive, Html, Css and perfectd my UI design using Figma
+            </p>
+          </div>
+        </div>
+
+        <!-- SLIDE 2 (next two projects) -->
+        <div class="swiper-slide">
+          <div class="project-card">
+            <img src="/images/lumee.jpg" />
+            <h3>Project Title 3</h3>
+            <p>Project description...</p>
+          </div>
+
+          <div class="project-card">
+            <img src="/images/timezone.jpg" />
+            <h3>Project Title 4</h3>
+            <p>Project description...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <script>
+      var swiper = new Swiper(".myProjectsSwiper", {
+        slidesPerView: 1, // 1 slide = 2 projects
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

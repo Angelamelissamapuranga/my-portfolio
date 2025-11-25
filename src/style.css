@@ -8,7 +8,8 @@
 body {
   background: var(--main-color);
   font-family: var(--primary-font);
-  font-weight: 100;
+
+  color: white;
 }
 
 h1,
@@ -24,6 +25,16 @@ h6 {
 
 h1 {
   font-size: 66px;
+  line-height: 1.5;
+}
+h2 {
+  font-size: 50px;
+}
+
+p {
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .hero h2 {
@@ -37,6 +48,7 @@ h1 {
   background-color: var(--branding-color);
   text-align: center;
   padding: 160px 20;
+  color: black;
 }
 
 .hero p {
@@ -47,10 +59,63 @@ h1 {
 }
 
 .btn-branding {
-  background: #1c1c1b;
+  background: var(--branding-color);
   color: white;
   border-radius: 4px;
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+}
+
+.about-description {
+  padding: 120px 60px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+  .about-description {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.project-card {
+  width: 32%;
+  max-width: 360px;
+  background: var(--branding-color);
+  padding: 20px;
+  border-radius: 6px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--branding-color); /* temp color, will change later */
+  right: 40px; /* moves next arrow IN from right side */
+  left: auto;
+}
+
+.swiper-button-prev {
+  left: 40px; /* moves prev arrow IN from left side */
+  right: 40px;
 }
