@@ -35,7 +35,30 @@
   </head>
   <body>
     <div class="hero mb-4">
-      <p>Hello I am</p>
+      <div class="container">
+        <nav class="d-flex justify-content-between">
+          <img
+            src="/images/logo.png"
+            alt="custom logo of Angela mapuranga"
+            class="logo"
+          />
+          <ul>
+            <li class="active">
+              <a href="/"> Home </a>
+            </li>
+            <li>
+              <a href="/about.html">About</a>
+            </li>
+            <li>
+              <a href="/my-projects.html">Work</a>
+            </li>
+            <li>
+              <a href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
       <h1>Angela Melissa Mapuranga</h1>
       <h2 class="mb-5">Junior Front-end Developer based in Hasselt, Belgium</h2>
       <div class="emojis mb-5">
@@ -57,7 +80,7 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="project-card">
-            <img src="/images/weather.jpg" />
+            <img src="/images/weatherapp.png" />
             <h3>weather app</h3>
             <p>
               I built a responsive weather application using HTML, CSS, and
@@ -69,8 +92,8 @@
           </div>
 
           <div class="project-card">
-            <img src="/images/devillo.jpg" />
-            <h3>De-Villo (coming soon)</h3>
+            <img src="/images/timezone.png" />
+            <h3>Time-Zone App</h3>
             <p>
               responsive mock website (for my Landord) I really wanted to push
               myself and challange myself and build a website that wasnt
@@ -97,9 +120,46 @@
 
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
-      <div class="btn btn-branding">
-        <a href="http://">About Developer</a>
+      <div class="text-center">
+        <a href="/about.html" class="btn btn-branding mt-4">About Developer</a>
       </div>
+    </div>
+
+    <div>
+      <footer>
+        <div
+          class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex"
+        >
+          <div>
+            <h4>Work Inquiry</h4>
+            <p>Lets work together</p>
+          </div>
+          <div>
+            <a href="http://" class="btn btn-branding"> contact me</a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="mailto:angelammapuranga@icloud.com" class="email-link"
+            >angelammapuranga@icloud.com</a
+          >
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://github.com/Angelamelissamapuranga" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/angela-melissa-mapuranga-345a23274/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/angela_worlddwide?igsh=cDl4bmg3YnZwZWF5&utm_source=qr"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </footer>
     </div>
 
     <script>
