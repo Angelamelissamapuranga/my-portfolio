@@ -49,7 +49,10 @@ p {
 }
 
 .hero {
-  background-image: url(/images/backgroundb.jpeg);
+  background-image: url(/images/backgound.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
   padding: 80px 20;
   color: white;
