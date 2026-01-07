@@ -41,6 +41,10 @@ p {
   line-height: 30px;
 }
 
+a {
+  color: white;
+}
+
 .hero h2 {
   font-family: var(--primary-font);
   font-size: 24px;
