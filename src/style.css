@@ -283,6 +283,11 @@ footer .contact-box p {
   .logo {
     max-width: 90px; /* shrink logo */
   }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
 }
 
 .swiper-slide {
